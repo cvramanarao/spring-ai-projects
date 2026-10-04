@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-ai-intro
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        model: gpt-4o-mini
+
+  config:
+    import:
+      - optional:file:../.env[.properties]

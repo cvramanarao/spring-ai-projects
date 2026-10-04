@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-ai-rag
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      embedding:
+        model: text-embedding-3-small
+
+sfg:
+  aiapp:
+    vector-store-path: /tmp/vectorstore.json
+    documents-to-load:
+      - classpath:/movies500.csv
